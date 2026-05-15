@@ -1,0 +1,50 @@
+# ============================================================
+# Keil MDK Build Artifacts
+# ============================================================
+
+# Compiled object files
+*.o
+*.crf
+*.d
+
+# Linker outputs
+*.axf
+*.map
+*.lnp
+*.dep
+
+# Assembler listing
+*.lst
+
+# Build log
+*.htm
+
+# Keil build directories
+Objects/
+Listings/
+
+# Keil personal settings (window layout, debugger config)
+*.uvoptx
+*.uvguix.*
+
+# Keil Run-Time Environment (auto-generated)
+RTE/
+
+# Keil debug configuration (contains local paths)
+DebugConfig/
+
+# ============================================================
+# GCC / Makefile Build Output
+# ============================================================
+
+*.elf
+*.hex
+*.bin
+build/
+
+# ============================================================
+# IDE / Tool Settings
+# ============================================================
+
+# Claude Code local settings
+.claude/
