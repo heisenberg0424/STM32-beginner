@@ -40,10 +40,8 @@ BUILD_DIR = build
 C_SOURCES = \
 User/main.c \
 User/stm32f10x_it.c \
-Hardware/Buzzer.c \
-Hardware/Encoder.c \
 Hardware/OLED.c \
-System/Delay.c \
+System/Timer.c \
 $(filter-out Library/core_cm3.c, $(wildcard Library/*.c))
 
 # Assembly sources. The startup file sets up the vector table, stack pointer,

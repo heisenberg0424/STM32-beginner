@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "STM32F10x",
+            "includePath": [
+                "${workspaceFolder}/User",
+                "${workspaceFolder}/Library",
+                "${workspaceFolder}/Hardware",
+                "${workspaceFolder}/System"
+            ],
+            "defines": [
+                "STM32F10X_MD",
+                "USE_STDPERIPH_DRIVER",
+                "HSE_VALUE=8000000"
+            ],
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

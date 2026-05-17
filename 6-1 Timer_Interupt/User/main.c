@@ -1,15 +1,16 @@
 #include "stm32f10x.h"
 #include "OLED.h"
-#include "Encoder.h"
-#include "Delay.h"
+#include "Timer.h"
+
+uint16_t num = 0;
 
 int main(void)
 {
     OLED_Init();
-    Encoder_init();
+    Timer_init();
     OLED_ShowString(1, 1, "CNT: ");
     while (1)
     {
-        OLED_ShowSignedNum(1, 6, get_encoder_cnt(), 3);
+        OLED_ShowNum(1, 6, num, 3);
     }
 }
